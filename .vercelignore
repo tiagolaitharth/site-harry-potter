@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+.git/
+.vscode/
+AGENTS.md
+CLAUDE.md
+referencia/
+sofia-pro/
+wizard-world/
+public/assets/fotos/website-images/ChatGPT Image*.png
+public/assets/fotos/website-images/hp-img-*.png

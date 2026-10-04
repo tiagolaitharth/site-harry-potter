@@ -1,0 +1,537 @@
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-ultralight.otf") format("opentype");
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-ultralight-italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-extralight.otf") format("opentype");
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-extralight-italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-light.otf") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-light-italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-regular-italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-medium.otf") format("opentype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-medium-italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-semibold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-semibold-italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-bold-italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-black.otf") format("opentype");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/assets/fonts/sofia-pro-black-italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+}
+
+/* O projeto fornece um único arquivo de exibição. Os nomes abaixo preservam
+   a nomenclatura tipográfica do layout enquanto usam o mesmo arquivo local. */
+@font-face {
+  font-family: "Bluu Next";
+  src: url("/assets/fonts/wizard-world.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Harry Beast Regular";
+  src: url("/assets/fonts/wizard-world.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Harry Beast Display";
+  src: url("/assets/fonts/wizard-world.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Wizard World";
+  src: url("/assets/fonts/wizard-world.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  --font-body: "Sofia Pro", Helvetica, "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo,
+    "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  --font-heading: "Harry Beast Regular", "Bluu Next", "Wizard World",
+    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ",
+    Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", serif;
+  --font-display: "Harry Beast Display", "Bluu Next", "Wizard World",
+    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ",
+    Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", serif;
+  --_text-base---font--body: var(--font-body) !important;
+  --_text-base---font--heading: var(--font-heading) !important;
+  --_text-base---font--display: var(--font-display) !important;
+}
+
+html,
+body,
+p,
+a,
+button,
+input,
+textarea,
+select,
+label,
+summary {
+  font-family: var(--font-body) !important;
+}
+
+body {
+  font-weight: 300;
+}
+
+p {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-style-h1,
+.heading-style-h2,
+.heading-style-h3,
+.heading-style-h4,
+.heading-style-h5,
+.heading-style-h6 {
+  font-family: var(--font-heading) !important;
+  font-weight: 400;
+}
+
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em,
+.hero-special_title-accent,
+.text-style-display {
+  font-family: var(--font-display) !important;
+  font-weight: 400;
+}
+
+blockquote,
+.testimonial_quote {
+  font-family: "Bluu Next", "Wizard World", serif !important;
+  font-weight: 400;
+}
+
+/* Mantem a tipografia do tema tambem nas areas herdadas do layout original. */
+.section_navbar,
+.nav-menu_component,
+.section_footer {
+  --_text-base---font--body: var(--font-body) !important;
+  --_text-base---font--heading: var(--font-heading) !important;
+  --_text-base---font--display: var(--font-display) !important;
+}
+
+:is(.section_navbar, .nav-menu_component, .section_footer)
+  :is(a, p, span, button, input, label, summary, li) {
+  font-family: var(--font-body) !important;
+}
+
+:is(.nav-menu_link-group-tab_title-text, .footer_links_list-title) {
+  font-family: var(--font-heading) !important;
+  font-weight: 400 !important;
+}
+
+/* Marca Hogwarts: o PNG monocromatico se adapta ao contraste de cada area. */
+:is(
+    .preloader_logo-wrap,
+    .navbar_logo-wrapper .logo_component,
+    .nav-menu_crest-wrapper,
+    .footer_logo-link-wrap,
+    .footer_korowa-text-wrap
+  ) {
+  background-image: url("/assets/brasao.png") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  color: #fff;
+  mix-blend-mode: screen;
+  position: relative;
+}
+
+.preloader_logo-wrap > *,
+.navbar_logo-wrapper .logo_component > *,
+.nav-menu_crest-wrapper > *,
+.footer_logo-link-wrap > *,
+.footer_korowa-text-wrap > * {
+  display: none !important;
+}
+
+.preloader_logo-wrap::after,
+.navbar_logo-wrapper .logo_component::after,
+.nav-menu_crest-wrapper::after,
+.footer_logo-link-wrap::after,
+.footer_korowa-text-wrap::after {
+  content: "Hogwarts";
+  font-family: var(--font-display) !important;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.navbar_logo-wrapper .logo_component {
+  background-position: left center !important;
+  background-size: auto 100% !important;
+  width: 11rem;
+}
+
+.navbar_logo-wrapper .logo_component::after {
+  font-size: 1.55rem;
+  left: 3.15rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Barra transparente: marca branca sobre a fotografia. */
+.section_navbar:not(.is-fill)
+  > .navbar-wrapper
+  .navbar_logo-wrapper:not(.is-nav-menu)
+  .logo_component {
+  background-blend-mode: normal !important;
+  background-color: transparent !important;
+  color: #fff;
+  mix-blend-mode: screen;
+}
+
+/* Barra preenchida: versao colorida no vermelho institucional. */
+.section_navbar.is-fill
+  > .navbar-wrapper
+  .navbar_logo-wrapper:not(.is-nav-menu)
+  .logo_component {
+  background-image: none !important;
+  background-color: transparent !important;
+  color: var(--_color---cherry, #4b1f68);
+  mix-blend-mode: normal;
+}
+
+.section_navbar.is-fill
+  > .navbar-wrapper
+  .navbar_logo-wrapper:not(.is-nav-menu)
+  .logo_component::before {
+  background-color: var(--_color---cherry, #4b1f68);
+  content: "";
+  height: 100%;
+  left: 0;
+  mask: url("/assets/brasao.png") center / contain no-repeat;
+  position: absolute;
+  top: 0;
+  width: 2.65rem;
+  -webkit-mask: url("/assets/brasao.png") center / contain no-repeat;
+}
+
+/* Menu claro: versao preta para manter contraste. */
+.navbar_logo-wrapper.is-nav-menu .logo_component {
+  background-blend-mode: normal !important;
+  background-color: transparent !important;
+  color: #383d4e;
+  mix-blend-mode: multiply;
+}
+
+.preloader_logo-wrap {
+  aspect-ratio: 753 / 1010;
+  background-position: center top !important;
+  background-size: auto calc(100% - 2.4rem) !important;
+}
+
+.preloader_logo-wrap::after,
+.nav-menu_crest-wrapper::after,
+.footer_logo-link-wrap::after {
+  bottom: 0;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.nav-menu_crest-wrapper {
+  aspect-ratio: 753 / 1010;
+  background-position: center top !important;
+  background-size: auto calc(100% - 3rem) !important;
+}
+
+.footer_logo-link-wrap {
+  aspect-ratio: 753 / 1010;
+  background-image: none !important;
+  mix-blend-mode: normal;
+  width: clamp(7rem, 12vw, 11rem) !important;
+}
+
+.footer_logo-link-wrap::before {
+  background-color: #fff;
+  content: "";
+  height: calc(100% - 2.5rem);
+  left: 0;
+  mask: url("/assets/brasao.png") center / contain no-repeat;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-mask: url("/assets/brasao.png") center / contain no-repeat;
+}
+
+.footer_korowa-text-wrap {
+  background-position: left center !important;
+  background-size: auto 100% !important;
+}
+
+.footer_korowa-text-wrap::after {
+  font-size: clamp(2rem, 7vw, 6rem);
+  margin-left: 1em;
+}
+
+/* Paleta Hogwarts: substitui os antigos tons vermelhos por roxos profundos. */
+:root {
+  --_color---cherry: #4b1f68 !important;
+  --_color---bright-cherry: #6d2f8f !important;
+  --_color---cherry-black: #1d0b2a !important;
+  --_color---clarke: #9a6bc2 !important;
+}
+
+/* Manifesto de Hogwarts: uma unica voz tipografica com ritmo editorial. */
+.section_statement {
+  background:
+    radial-gradient(circle at 82% 20%, rgb(154 107 194 / 18%), transparent 34%),
+    radial-gradient(circle at 12% 88%, rgb(215 181 245 / 10%), transparent 28%),
+    var(--_color---cherry);
+  min-height: auto !important;
+  padding: clamp(4rem, 7vw, 7rem) var(--page-padding) !important;
+}
+
+.section_statement .statement_content-wrapper {
+  gap: clamp(1.5rem, 3vw, 3.5rem);
+  height: auto !important;
+  max-width: min(88%, 96rem);
+  position: relative !important;
+  top: auto !important;
+}
+
+.section_statement .statement_content-wrapper > div:first-child {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.section_statement .statement_content-wrapper > div:first-child::before {
+  color: #d7b5f5;
+  content: "✦";
+  font-size: 1rem;
+}
+
+.section_statement .statement_content-wrapper .heading.text-size-small {
+  font-family: var(--font-body) !important;
+  font-size: clamp(0.72rem, 0.85vw, 0.92rem) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em !important;
+  line-height: 1.5 !important;
+  max-width: 58rem;
+  text-transform: uppercase !important;
+}
+
+.section_statement .statement_text-wrap {
+  font-family: var(--font-heading) !important;
+  font-size: clamp(2rem, 2.75vw, 3.4rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.12 !important;
+  max-width: 28ch;
+  text-wrap: balance;
+}
+
+.section_statement .statement_text-wrap em {
+  background-image: linear-gradient(90deg, #d7b5f5, #b98adf);
+  background-position: 0 94%;
+  background-repeat: no-repeat;
+  background-size: 100% 0.08em;
+  color: #fff !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-style: normal;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  text-shadow: 0 0 1.5rem rgb(215 181 245 / 20%);
+}
+
+.section_statement .statement_closing {
+  color: #d7b5f5;
+  display: block;
+  margin-top: 0.2em;
+}
+
+@media screen and (max-width: 767px) {
+  .section_statement .statement_content-wrapper {
+    max-width: calc(100% - 2rem);
+  }
+
+  .section_statement .statement_text-wrap {
+    font-size: clamp(1.75rem, 7vw, 2.5rem) !important;
+    line-height: 1.14 !important;
+    max-width: 100%;
+  }
+}
+
+/* O cabeçalho permanece visível tanto na descida quanto na subida da página. */
+.section_navbar,
+.section_navbar.is-hidden {
+  transform: translateY(0) !important;
+}
+
+/* Evita que o CTA do card de vídeo da primeira seção seja centralizado para
+   fora da coluna de texto e tenha o início recortado. */
+.hero-special_video-card .mini-video-card_text-wrapper .button_component {
+  align-self: flex-start;
+  overflow: visible;
+}
+
+.hero-special_video-card .mini-video-card_text-wrapper .button_content-wrapper {
+  justify-content: flex-start;
+  width: max-content;
+}
+
+/* Substitui o antigo símbolo decorativo do CTA pelo brasão de Hogwarts. */
+.cta_crest-wrapper {
+  height: 140% !important;
+  opacity: 0.2 !important;
+  right: -1rem !important;
+  top: 50% !important;
+  transform: translate(34%, -50%) !important;
+  width: clamp(22rem, 38vw, 38rem);
+}
+
+.cta_crest-wrapper .logo_crest-mark {
+  display: none !important;
+}
+
+.cta_crest-wrapper::before {
+  background-color: #fff;
+  content: "";
+  inset: 0;
+  mask: url("/assets/brasao.png") center / contain no-repeat;
+  position: absolute;
+  -webkit-mask: url("/assets/brasao.png") center / contain no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .cta_crest-wrapper {
+    opacity: 0.14 !important;
+    right: -5rem !important;
+    width: 24rem;
+  }
+}

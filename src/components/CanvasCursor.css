@@ -1,0 +1,14 @@
+#canvas {
+  height: 100vh;
+  inset: 0;
+  pointer-events: none;
+  position: fixed;
+  width: 100vw;
+  z-index: 998;
+}
+
+@media (pointer: coarse), (prefers-reduced-motion: reduce) {
+  #canvas {
+    display: none;
+  }
+}

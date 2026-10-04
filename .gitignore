@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.astro/
+.vercel/
+.vscode/
+*.log
+AGENTS.md
+CLAUDE.md
+
+# Materiais auxiliares usados apenas durante o desenvolvimento
+referencia/
+sofia-pro/
+wizard-world/
+
+# Cópias públicas não utilizadas; as versões processadas ficam em src/assets
+public/assets/fotos/website-images/ChatGPT Image*.png
+public/assets/fotos/website-images/hp-img-*.png
+
+.vercel

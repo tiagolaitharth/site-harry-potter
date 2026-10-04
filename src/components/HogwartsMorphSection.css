@@ -1,0 +1,168 @@
+.hogwarts-morph-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(4.5rem, 8vw, 9rem) var(--page-padding);
+  color: #f7f1f8;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(157, 92, 196, 0.2), transparent 34rem),
+    linear-gradient(135deg, #21082f 0%, #351148 52%, #250a35 100%);
+}
+
+.hogwarts-morph-glow {
+  position: absolute;
+  z-index: -1;
+  width: 34rem;
+  height: 34rem;
+  border-radius: 50%;
+  background: rgba(145, 75, 186, 0.2);
+  filter: blur(90px);
+  right: -12rem;
+  bottom: -16rem;
+  pointer-events: none;
+}
+
+.hogwarts-morph-container {
+  width: min(100%, var(--container--large));
+  margin-inline: auto;
+}
+
+.hogwarts-morph-layout {
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.82fr) minmax(28rem, 1.18fr);
+  gap: clamp(2.5rem, 6vw, 7rem);
+  align-items: center;
+}
+
+.hogwarts-morph-copy {
+  max-width: 39rem;
+  animation: hogwarts-morph-copy-in 0.72s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hogwarts-morph-eyebrow {
+  max-width: 34rem;
+  margin: 0 0 1.5rem;
+  color: #caa6e4;
+  font-family: var(--font-body);
+  font-size: clamp(0.76rem, 1vw, 0.92rem);
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.hogwarts-morph-title {
+  margin: 0;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 5.5vw, 6.5rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 0.96;
+}
+
+.hogwarts-morph-title em {
+  color: #fff;
+  font-family: var(--font-display);
+  font-style: italic;
+}
+
+.hogwarts-morph-description {
+  margin: clamp(1.75rem, 3vw, 2.75rem) 0 0;
+  color: rgba(247, 241, 248, 0.82);
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.hogwarts-morph-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding: 0.95rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-radius: 0.25rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+
+.hogwarts-morph-link:hover {
+  color: #2a0c3b;
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+.hogwarts-morph-link span {
+  font-size: 1.15rem;
+  transition: transform 0.25s ease;
+}
+
+.hogwarts-morph-link:hover span {
+  transform: translateX(0.2rem);
+}
+
+.hogwarts-morph-media {
+  min-width: 0;
+  height: clamp(30rem, 52vw, 46rem);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 1.75rem;
+  box-shadow: 0 2rem 6rem rgba(7, 1, 13, 0.42);
+}
+
+@keyframes hogwarts-morph-copy-in {
+  from {
+    opacity: 0;
+    transform: translateY(1.2rem);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@media (max-width: 991px) {
+  .hogwarts-morph-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hogwarts-morph-copy {
+    max-width: 46rem;
+  }
+
+  .hogwarts-morph-media {
+    height: min(72vw, 38rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .hogwarts-morph-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .hogwarts-morph-layout {
+    gap: 2.25rem;
+  }
+
+  .hogwarts-morph-media {
+    height: 118vw;
+    max-height: 34rem;
+    min-height: 25rem;
+    border-radius: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hogwarts-morph-copy {
+    animation: none;
+  }
+}
